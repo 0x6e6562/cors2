@@ -10,7 +10,7 @@ get '/' do
 end
 
 post '/blah' do
-  headers 'Access-Control-Allow-Origin' => '*', 'Access-Control-Allow-Methods' => 'POST, GET, OPTIONS'
+  #headers 'Access-Control-Allow-Origin' => '*', 'Access-Control-Allow-Methods' => 'POST, GET, OPTIONS'
   
   content_type :json
   {:x => 2, :hello => params[:hello]}.to_json
